@@ -3,7 +3,6 @@ package tokyo_2011_02;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PipedInputStream;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -394,7 +393,7 @@ public class _2011_02 {
 		
 		Socket socket = new Socket(HOST,PORT);
 		PrintWriter pw = new PrintWriter(socket.getOutputStream(),true);
-		BufferedReader br =new BufferedReader(new InputStreamReader(socket.getInputStream()));
+		BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 		pw.println("player2 entered.");
 		
 		System.out.println("game start:");
