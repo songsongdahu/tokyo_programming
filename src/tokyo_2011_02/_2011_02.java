@@ -99,8 +99,8 @@ public class _2011_02 {
 		}
 	}
 	/*
-	 * -1 銇俱仩
-	 * 0 寮曘亶鍒嗐亼
+	 * -1 continue
+	 * 0 draw
 	 * 1 player1 win
 	 * 2 player2 win
 	 */
@@ -146,7 +146,7 @@ public class _2011_02 {
 		int turn = 1;//1 is player1;2 is player2
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("閵堝眰鍏楅妷鐘仯閵堣￥鍏楅妷锟�:");
+		System.out.println("game start:");
 		showBanmen();
 		while(gameOver==-1){
 			System.out.println("player"+turn+" input:");
@@ -163,13 +163,13 @@ public class _2011_02 {
 			showBanmen();
 		}
 		if(gameOver==0){
-			System.out.println("寮曘亶鍒嗐亼");
+			System.out.println("draw");
 		} else if(gameOver==1){
-			System.out.println("player1 鍕濄仱");
+			System.out.println("player1 win");
 		} else if(gameOver==2){
-			System.out.println("player2 鍕濄仱");
+			System.out.println("player2 win");
 		}
-		System.out.println("銈层兗銉犮偑銉笺儛銉�");
+		System.out.println("game over");
 	}
 	
 	//(3)
@@ -191,7 +191,7 @@ public class _2011_02 {
 		int turn = 1;//1 is player1;2 is com
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("銈层兗銉犮偣銈裤兗銉�:");
+		System.out.println("game start:");
 		showBanmen();
 		while(gameOver==-1){
 			if(turn == 1){
@@ -212,13 +212,13 @@ public class _2011_02 {
 			showBanmen();
 		}
 		if(gameOver==0){
-			System.out.println("寮曘亶鍒嗐亼");
+			System.out.println("draw");
 		} else if(gameOver==1){
-			System.out.println("player1 鍕濄仱");
+			System.out.println("player1 win");
 		} else if(gameOver==2){
-			System.out.println("com 鍕濄仱");
+			System.out.println("com win");
 		}
-		System.out.println("銈层兗銉犮偑銉笺儛銉�");
+		System.out.println("game over");
 	}
 	
 	//(4)
@@ -227,7 +227,7 @@ public class _2011_02 {
 		int turn = 1;//1 is com1;2 is com2
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("銈层兗銉犮偣銈裤兗銉�:");
+		System.out.println("game start:");
 		showBanmen();
 		while(gameOver==-1){
 			Thread.sleep(1000);
@@ -248,18 +248,18 @@ public class _2011_02 {
 			showBanmen();
 		}
 		if(gameOver==0){
-			System.out.println("寮曘亶鍒嗐亼");
+			System.out.println("draw");
 		} else if(gameOver==1){
-			System.out.println("com1 鍕濄仱");
+			System.out.println("com1 win");
 		} else if(gameOver==2){
-			System.out.println("com2 鍕濄仱");
+			System.out.println("com2 win");
 		}
-		System.out.println("銈层兗銉犮偑銉笺儛銉�");
+		System.out.println("game over");
 	}
 	
 	//(5)
 	public String wisdomInput(){
-		//k=2銆�銇嬨仾銈夈仛鍕濄仱 k=1 銇嬨仾銈夈仛璨犮亼銈�
+		//k=2 is sure to win k=1 is sure to lose
 		for(int k=2;k>=1;k--){
 			for(int i=0;i<3;i++){
 				if(banmen[i][0]==0&&banmen[i][1]==k&&banmen[i][2]==k){
@@ -310,7 +310,7 @@ public class _2011_02 {
 		int turn = 1;//1 is player1;2 is com
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("銈层兗銉犮偣銈裤兗銉�:");
+		System.out.println("game start:");
 		showBanmen();
 		while(gameOver==-1){
 			if(turn == 1){
@@ -331,13 +331,13 @@ public class _2011_02 {
 			showBanmen();
 		}
 		if(gameOver==0){
-			System.out.println("寮曘亶鍒嗐亼");
+			System.out.println("draw");
 		} else if(gameOver==1){
-			System.out.println("player1 鍕濄仱");
+			System.out.println("player1 win");
 		} else if(gameOver==2){
-			System.out.println("com 鍕濄仱");
+			System.out.println("com win");
 		}
-		System.out.println("銈层兗銉犮偑銉笺儛銉�");
+		System.out.println("game over");
 	}
 	
 	//(7)
@@ -355,7 +355,7 @@ public class _2011_02 {
 		String str = br.readLine();
 		System.out.println(str);
 		
-		System.out.println("銈层兗銉犮偣銈裤兗銉�:");
+		System.out.println("game start:");
 		showBanmen();
 		while(gameOver==-1){
 			Thread.sleep(1000);
@@ -377,13 +377,13 @@ public class _2011_02 {
 			showBanmen();
 		}
 		if(gameOver==0){
-			System.out.println("寮曘亶鍒嗐亼");
+			System.out.println("draw");
 		} else if(gameOver==1){
-			System.out.println("com1 鍕濄仱");
+			System.out.println("com1 win");
 		} else if(gameOver==2){
-			System.out.println("com2 鍕濄仱");
+			System.out.println("com2 win");
 		}
-		System.out.println("銈层兗銉犮偑銉笺儛銉�");
+		System.out.println("game over");
 		socket.close();
 		serverSocket.close();
 	}
@@ -397,7 +397,7 @@ public class _2011_02 {
 		BufferedReader br =new BufferedReader(new InputStreamReader(socket.getInputStream()));
 		pw.println("player2 entered.");
 		
-		System.out.println("銈层兗銉犮偣銈裤兗銉�:");
+		System.out.println("game start:");
 		showBanmen();
 		while(gameOver==-1){
 			Thread.sleep(1000);
@@ -419,13 +419,13 @@ public class _2011_02 {
 			showBanmen();
 		}
 		if(gameOver==0){
-			System.out.println("寮曘亶鍒嗐亼");
+			System.out.println("draw");
 		} else if(gameOver==1){
-			System.out.println("com1 鍕濄仱");
+			System.out.println("com1 win");
 		} else if(gameOver==2){
-			System.out.println("com2 鍕濄仱");
+			System.out.println("com2 win");
 		}
-		System.out.println("銈层兗銉犮偑銉笺儛銉�");
+		System.out.println("game over");
 		socket.close();
 	}
 	
